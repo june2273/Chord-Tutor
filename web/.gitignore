@@ -1,0 +1,29 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# prepare_web_piano.py가 만드는 피아노 샘플 (1.3MiB, 원본은 저장소 밖)
+#   .venv/bin/python download_assets.py
+#   .venv/bin/python prepare_web_piano.py
+public/piano/
