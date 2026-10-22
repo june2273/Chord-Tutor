@@ -1,5 +1,3 @@
-[한국어](README.ko.md)
-
 # Chord-Tutor
 
 Browser drills for harmony and ear training: intervals, scales, key signatures and the circle of fifths. Answers come from a MIDI keyboard, the computer keyboard, or typed names.
@@ -24,6 +22,11 @@ Music theory drills are usually on paper, and keyboard-based ear-training apps t
   - All 48 scales (12 keys × 4 types) are checked to stay within double accidentals.
   - The 15-key signature table is re-derived from the two textbook rules (last sharp is the leading tone; the second-to-last flat is the tonic).
 
+## Tech stack
+
+- TypeScript, React 19, Vite, vitest
+- verovio for notation, Web Audio (sampled piano with sine fallback), Web MIDI
+
 ## Run
 
 ```bash
@@ -42,7 +45,7 @@ python3 web/scripts/prepare_web_piano.py   # needs ffmpeg
 
 MIDI input works in Chrome and Edge (Web MIDI). In Safari and Firefox the computer keyboard (`A W S E D F T G Y H U J K` = C4–C5) or the on-screen keyboard is used instead.
 
-## Limitations and lessons
+## Lessons learned
 
 - Not built yet: chord ear training, diatonic chords, tensions, modes, EQ/loudness/pan ear training, and a rhythm/chord-play mode. Each one's requirements are listed in the app's catalog screen.
 - No progress history is stored yet.
@@ -55,3 +58,6 @@ MIDI input works in Chrome and Edge (Web MIDI). In Safari and Firefox the comput
 - Studied with J. Nam's public course materials: CTP431 / GCT731.
 
 Full sources and licenses: [citation.md](citation.md).
+
+---
+한국어 문서: [README.ko.md](README.ko.md)
